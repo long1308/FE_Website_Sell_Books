@@ -12,9 +12,13 @@ import { registerLocaleData } from '@angular/common';
 import uk from '@angular/common/locales/uk';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CarouselModule } from 'primeng/carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AvatarModule } from 'primeng/avatar';
 import { InputTextModule } from 'primeng/inputtext';
+import { ProductsComponent } from './components/products/products.component';
+import { TagModule } from 'primeng/tag';
+import { ItemComponent } from './components/item/item.component';
 registerLocaleData(uk);
 
   @NgModule({
@@ -23,7 +27,10 @@ registerLocaleData(uk);
     HeaderComponent,
     FooterComponent,
     LayoutAdminComponent,
-    LayoutClientComponent
+    LayoutClientComponent,
+    ProductsComponent,
+    ItemComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,9 @@ registerLocaleData(uk);
     HttpClientModule,
     BrowserAnimationsModule,
     AvatarModule,
-    InputTextModule
+    InputTextModule,
+    CarouselModule,
+    TagModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: uk_UA }

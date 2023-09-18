@@ -1,0 +1,26 @@
+<div class="m-20">
+  <h2 class="text-5xl text-[#222] text-center font-bold tracking-wider">
+    Featured Products
+  </h2>
+  <p class="text-base text-[#465b52] text-center my-6 opacity-90">
+    Summer Collection New Morden Design
+  </p>
+  <app-item
+    [featuredProducts]="featuredProducts"
+    [responsiveOptions]="responsiveOptions"
+  ></app-item>
+  <!-- <app-banner3></app-banner3> -->
+  <div class="m-20">
+    <h2 class="text-5xl text-[#222] text-center font-bold tracking-wider">
+      New Arrivals
+    </h2>
+    <p class="text-base text-[#465b52] text-center my-6 opacity-90">
+      Summer Collection New Morden Design
+    </p>
+    <!-- List Products New -->
+    <app-item
+    [featuredProducts]="newProducts"
+    [responsiveOptions]="responsiveOptions"
+  ></app-item>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutClientComponent } from './layout/layout-client/layout-client.component';
+import { ProductsComponent } from './components/products/products.component';
 
 const routes: Routes = [
   {
@@ -8,7 +9,7 @@ const routes: Routes = [
     component: LayoutClientComponent,
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
-      // { path: 'home', component: ContainerComponent },
+      { path: 'home', component: ProductsComponent },
       // { path: 'products/:id', component: ProductDetailComponent },
       // { path: 'shop', component: ShopComponent },
       // { path: 'blog', component: BlogComponent },

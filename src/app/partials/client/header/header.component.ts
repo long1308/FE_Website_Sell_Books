@@ -24,7 +24,6 @@ export class HeaderComponent {
       }
     });
     // this.getCategory();
-    console.log(this.user);
   }
   isMenuVisible: boolean = false;
   toggleMenu() {

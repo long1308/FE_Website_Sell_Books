@@ -15,10 +15,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'primeng/carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AvatarModule } from 'primeng/avatar';
+import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { ProductsComponent } from './components/products/products.component';
 import { TagModule } from 'primeng/tag';
 import { ItemComponent } from './components/item/item.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { Banner1Component } from './components/banner1/banner1.component';
 registerLocaleData(uk);
 
   @NgModule({
@@ -30,6 +33,8 @@ registerLocaleData(uk);
     LayoutClientComponent,
     ProductsComponent,
     ItemComponent,
+    BannerComponent,
+    Banner1Component,
     
   ],
   imports: [
@@ -41,7 +46,8 @@ registerLocaleData(uk);
     AvatarModule,
     InputTextModule,
     CarouselModule,
-    TagModule
+    TagModule,
+    ButtonModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: uk_UA }
